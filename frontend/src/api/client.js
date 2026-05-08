@@ -1,5 +1,4 @@
 import axios from 'axios';
-import axios from 'axios';
 const API = axios.create({ baseURL: 'https://health-monitor-production-04fd.up.railway.app/api' });
 export const getEndpoints = () => API.get('/endpoints');
 export const addEndpoint = (data) => API.post('/endpoints', data);
